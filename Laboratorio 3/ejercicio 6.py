@@ -1,0 +1,18 @@
+#Karla Ivonne Serrano Arevalo
+#Ejerercicio 6
+#Noviembre 2016
+
+aper=input("Años persona ")
+if(aper<1):
+	print "Su entrada no es valida "
+elif (aper ==1):
+	aperro1=aper*10.5
+	print "Los Años-persona ",aper,"son",aperro1,"Años-perro"
+elif (aper==2):
+	aperro2=aper*10.5
+	print "Los Años-persona ",aper,"son",aperro2,"Años-perro"
+elif (aper>2):
+	aperro3=aper*4
+	print "Los Años-persona ",aper,"son",aperro3,"Años-perro"
+
+	

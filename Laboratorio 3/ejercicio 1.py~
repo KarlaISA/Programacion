@@ -1,0 +1,22 @@
+#Karla Ivonne Serrano Arevalo
+#Ejerercicio 1
+#Diciembre 2016
+
+import math
+x1=input("latitud1 ")
+x2=input("longitud1 ")
+y1=input("latitud2 ")
+y2=input("longitu2 ")
+a=x1,y1
+b=x2,y2
+
+def Distancia(a,b):
+	t1=x1*math.pi/180
+	g1=y1*math.pi/180
+	a=t1,g1
+	t2=x2*math.pi/180
+	g2=y2*math.pi/180
+	b=t2,g2
+	distancia=6371.01*math.acos(math.sin(t1)*math.sin(t2)+math.cos(t1)*math.cos(t2)*math.cos(g1*g2))
+	return distancia
+print "Distancia entre los puntos en kilometros: " ,Distancia(a,b)
