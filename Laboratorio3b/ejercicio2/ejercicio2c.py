@@ -1,0 +1,19 @@
+#Karla Ivonne Serrano Arevalo
+#Ejerercicio 2.c
+#Diciembre 2016
+
+import matplotlib.pyplot as plt 
+import numpy as np
+import math
+
+x=np.linspace(0,4*math.pi,120)
+y=np.sin(3*x)*np.cos(2*x)
+z=1/2*np.cos(x)+5/2*np.cos(5*x)
+plt.plot(x,y,linewidth=4, color='r',label='f(t)=sen(3t)cos(2t)')
+plt.plot(x,z,linewidth=2, color='b',label='g(t)=1/2cos(t)+5/2cos(5t)')
+plt.legend()
+plt.title('Laboratorio 3b ejercicio 2c')
+plt.xlabel('eje x')
+plt.ylabel('eje y')
+plt.grid(True)
+plt.show()
